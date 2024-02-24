@@ -1,88 +1,213 @@
 
-
-
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    // border: 1px solid;
-    height: 15vh;
-
-    .nav{
-        // border: 1px solid;
-        @media screen and (max-width: 550px) {
-            display: none; 
-          }
-    }
-
-    .menu-nav{
-
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        gap: 10px;
-        list-style-type: none;
-
-        &__link{
-            color: gray;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-    }
-
-
-    .hamburger {
-        cursor: pointer;
-        // display: none;
-
-        @media screen and (min-width: 550px) {
-            display: none; 
-          }
-      }
-      
-      .hamburger input {
-        display: none;
-      }
-      
-      .hamburger svg {
-        /* The size of the SVG defines the overall size */
-        height: 3em;
-        /* Define the transition for transforming the SVG */
-        -webkit-transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      .line {
-        fill: none;
-        stroke: black;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 3;
-        /* Define the transition for transforming the Stroke */
-        -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      .line-top-bottom {
-        stroke-dasharray: 12 63;
-      }
-      
-      .hamburger input:checked + svg {
-        -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-      }
-      
-      .hamburger input:checked + svg .line-top-bottom {
-        stroke-dasharray: 20 300;
-        stroke-dashoffset: -32.42;
-      }
-      
+nav{
+  background-color: white;
+  padding: 1rem 1.5rem;
+  height: 15vh;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
   
 }
+
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-nav .links a {
+  color: gray;
+}
+
+.fixed-nav .links a:hover {
+  color: blue;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: gray;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color:hsla(182, 63%, 54%);
+}
+
+.logo {
+  height:5rem;
+}
+
+.links-container {
+  // height: 0;
+  overflow: hidden;
+  transition:all 0.3s linear;
+}
+
+.show-links {
+  height: 200px;
+}
+
+.links a {
+  background:#fff;
+  color: hsl(210, 22%, 49%);
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  display: block;
+  transition: all 0.3s linear;
+  font-weight: bold;
+  padding: 0.75rem 0;
+}
+
+.links a:hover {
+  color: hsl(209, 61%, 16%);
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    background: transparent;
+    height: 10vh;
+  }
+  .nav-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+    list-style: none;
+  }
+  .links a {
+    background: transparent;
+    color: gray;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    display: block;
+    transition: all 0.3s linear;
+    margin: 0 1rem;
+    font-weight: bold;
+    padding: 0;
+    text-decoration: none;
+  }
+  .links a:hover {
+    color: orangered;
+  }
+}
+// header{
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     text-align: center;
+//     // border: 1px solid;
+//     height: 15vh;
+//     position: fixed;
+//     width: 100%;
+//     z-index: 999999;
+//     top: 0;
+//     background-color: white;
+
+//     .nav{
+//         // border: 1px solid;
+//         @media screen and (max-width: 550px) {
+//             display: none; 
+//           }
+//     }
+
+//     .menu-nav{
+
+//         display: flex;
+//         justify-content: space-around;
+//         text-align: center;
+//         gap: 10px;
+//         list-style-type: none;
+
+//         &__link{
+//             color: gray;
+//             text-decoration: none;
+//             cursor: pointer;
+//         }
+
+//     }
+
+
+//     .hamburger {
+//         cursor: pointer;
+//         // display: none;
+
+//         @media screen and (min-width: 550px) {
+//             display: none; 
+//           }
+//       }
+      
+//       .hamburger input {
+//         display: none;
+//       }
+      
+//       .hamburger svg {
+//         /* The size of the SVG defines the overall size */
+//         height: 3em;
+//         /* Define the transition for transforming the SVG */
+//         -webkit-transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+//         transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+//         transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+//         transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+//       }
+      
+//       .line {
+//         fill: none;
+//         stroke: black;
+//         stroke-linecap: round;
+//         stroke-linejoin: round;
+//         stroke-width: 3;
+//         /* Define the transition for transforming the Stroke */
+//         -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+//                     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+//         transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+//                     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+//       }
+      
+//       .line-top-bottom {
+//         stroke-dasharray: 12 63;
+//       }
+      
+//       .hamburger input:checked + svg {
+//         -webkit-transform: rotate(-45deg);
+//             -ms-transform: rotate(-45deg);
+//                 transform: rotate(-45deg);
+//       }
+      
+//       .hamburger input:checked + svg .line-top-bottom {
+//         stroke-dasharray: 20 300;
+//         stroke-dashoffset: -32.42;
+//       }
+      
+  
+// }
+

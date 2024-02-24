@@ -18,7 +18,7 @@
         display: block;
         justify-content: center;
         align-items: center;
-        
+
       }
 
 }
@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999999;
+    z-index: 999;
 }
 .container .cartes .face.face1 .content
 {
@@ -56,6 +56,7 @@
 .container .cartes .face.face1 img 
 {
     max-width: 300px;
+    z-index: 0;
 }
 .container .cartes .face.face1 h3
 {

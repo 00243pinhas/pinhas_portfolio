@@ -10,6 +10,12 @@
     .skills__titles{
         display: grid;
         gap: 2rem;
+
+
+        h1{
+            font-weight: bold;
+            font-size: 3rem;
+        }
     }
 
     .skills__galeries{
