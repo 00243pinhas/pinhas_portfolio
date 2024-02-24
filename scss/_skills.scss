@@ -1,0 +1,76 @@
+
+
+.skills{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem;
+
+    .skills__titles{
+        display: grid;
+        gap: 2rem;
+    }
+
+    .skills__galeries{
+
+        gap: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        justify-content: center;
+        margin-top: 2rem;
+
+        @media screen and (max-width: 952px) {
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            justify-content: center;
+          }
+
+          @media screen and (max-width: 704px) {
+            grid-template-columns: repeat(2, minmax(200px, 1fr));
+            justify-content: center;
+          }
+
+        @media screen and (max-width: 550px) {
+            grid-template-columns: repeat(1, minmax(200px, 1fr));
+            justify-content: center;
+          }
+        
+        .galeries-item{
+            display: flex;
+            gap: 1rem;
+            // border: 1px solid;
+
+            .galerie-item__text{
+                display: block;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                // border: 1px solid;
+
+                h3{
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+
+                p{
+                    text-align: start;
+                    font-size: 1.3rem;
+                    // /* margin-top: 1rem; */
+                    margin: 1.2rem;
+                    letter-spacing: 0.05rem;
+                    // border: 1px solid;
+                }
+            }
+
+            .galerie-item__logo{
+                // border: 1px solid;
+                height: 4rem;
+
+                i{
+                    font-size: 4rem;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
