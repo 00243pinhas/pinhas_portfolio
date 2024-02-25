@@ -18,7 +18,7 @@
     margin: 5rem;
     // border:1px solid ;
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 800px) {
         display: block;
         // gap: 10rem;
       }
@@ -52,13 +52,26 @@
             display: flex;
             gap: 5rem;
             margin-left: 4rem;
+
+            @media screen and (max-width: 800px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
         }        
     }
 
-    // .banner-profil__img{
-    //     @media screen and (max-width: 550px) {
-    //         height: 5rem;
-    //       }
-    // }
+    .banner-profil__img{
 
+        .imageProfil{
+            height: 300px;
+
+        @media screen and (max-width:  800px) {
+            height: 200px;
+            width: 250px;
+          }
+        }
+        
+
+    }
 }
