@@ -96,6 +96,11 @@ nav{
   .nav-header span {
     font-size: 2.5rem;
     font-weight: bold;
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
   }
   .nav-toggle {
     display: none;
