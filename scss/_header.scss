@@ -93,6 +93,11 @@ nav{
   .nav-header {
     padding: 0;
   }
+
+  .nav-header span {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
   .nav-toggle {
     display: none;
   }
