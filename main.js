@@ -72,3 +72,20 @@ window.addEventListener("scroll", function () {
   });
 
 
+
+  // ********** Links scrolling  ************
+
+
+
+  const contactBtn = document.getElementById('contactBtn')
+
+  console.log(contactBtn)
+
+  contactBtn.addEventListener('click',function(){
+    
+    window.location.href = "http://localhost:5173/#contact";
+  })
+
+  
+
+
