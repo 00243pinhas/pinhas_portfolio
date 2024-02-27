@@ -24,6 +24,9 @@
       }
 
     .banner-profil__info{
+
+        align-items: start;
+        text-align: start;
         display: grid;
         gap: 2rem;
 
@@ -45,18 +48,19 @@
             p{
                 font-size: 1.5rem;
                 letter-spacing: 0.3rem;
-                line-height: 1.5rem;
+                line-height: 2.3rem;
                 color: black;
             }
         }
 
         &__btn{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            gap: 5rem;
-            margin-left: 4rem;
+            justify-content: flex-start;
+            // align-items: center;
+            // text-align: center;
+            gap: 3rem;
+            // margin-left: 4rem;
+            
 
             @media screen and (max-width: 800px) {
                 display: flex;
