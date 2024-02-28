@@ -5,13 +5,12 @@ export default defineConfig({
     
     outDir: 'dist',
    
-    assetsDir: 'aseetes',
+    assetsDir: './aseets',
     
     css: {
       preprocessorOptions: {
     
         scss: {
-         
           additionalData: `@import "./scss/index.scss";`,
         },
       },
