@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 export default defineConfig({
   root: '.', // Set the root directory to the project root
@@ -8,6 +9,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './src/main.js', // Set the entry point for Rollup to the main.js file in the src directory
+      },
+    },
+    resolve: {
+      alias: {
+        '@': resolve(__dirname, 'src'),
       },
     },
     minify: false, // Enable minification
