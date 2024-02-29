@@ -1,30 +1,16 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
 
 export default defineConfig({
-  // Set the root directory to the project root
-  root: './',
-  // Configure the output directory for the built files
+  root: '.', // Set the root directory to the project root
   build: {
-    outDir: 'dist',
-    // Configure Rollup options
+    outDir: 'dist', // Specify the output directory for the built files (in the root)
+    assetsDir: '.', // Set the assets directory to the project root
     rollupOptions: {
-      output: {
-        entryFileNames: '[name].[hash].js', // Customize the output file names (optional)
-        chunkFileNames: '[name].[hash].js', // Customize the chunk file names (optional)
-        assetFileNames: '[name].[hash].[ext]', // Customize the asset file names (optional)
-        // Output JavaScript files directly in the dist directory
-        dir: 'dist',
+      input: {
+        main: './src/main.js', // Set the entry point for Rollup to the main.js file in the src directory
       },
     },
+    minify: false, // Enable minification
+    target: 'es2018', // Specify the target environment
   },
-  // Configure the entry points for JavaScript and SCSS files
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, 'src'),
-    },
-  },
-
-  minify: false, // Enable minification
-  target: 'es2018', // Specify the target environment
 });
