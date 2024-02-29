@@ -26,4 +26,6 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
+  minify: false, // Enable minification
+  target: 'es2018', // Specify the target environment
 });
