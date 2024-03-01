@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: './',
-  base: '/pinhas_portfolio',
+  base: './',
   build: {
     outDir: 'dist',
     
