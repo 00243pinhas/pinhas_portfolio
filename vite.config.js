@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: './',
-  
+  base: '/pinhas_portfolio',
   build: {
     outDir: 'dist',
     
@@ -19,11 +19,6 @@ export default defineConfig({
     }
   },
   
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, 'src'),
-    },
-  },
   minify: false,
   target: 'es2018', 
 });
