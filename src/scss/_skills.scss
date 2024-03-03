@@ -50,14 +50,14 @@
         .galeries-item{
             display: flex;
             gap: 1rem;
-            // border: 1px solid;
+           
 
             .galerie-item__text{
                 display: block;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                // border: 1px solid;
+               
 
                 h3{
                     font-size: 2rem;
@@ -67,15 +67,15 @@
                 p{
                     text-align: start;
                     font-size: 1.3rem;
-                    // /* margin-top: 1rem; */
+                  
                     margin: 1.2rem;
                     letter-spacing: 0.05rem;
-                    // border: 1px solid;
+                  
                 }
             }
 
             .galerie-item__logo{
-                // border: 1px solid;
+            
                 height: 4rem;
 
                 i{

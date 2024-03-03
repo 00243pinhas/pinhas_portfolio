@@ -1,13 +1,5 @@
 
 
-// .banner-profil{
-// background-image: url(/assets/profile.jpeg);
-// // background-color: red;
-//   width: 100%;
-//   border: 1px solid;
-//   height: 50vh;
-// }
-
 
 
 .banner{
@@ -16,11 +8,11 @@
     align-items: center;
     text-align: center;
     margin: 5rem;
-    // border:1px solid ;
+   
 
     @media screen and (max-width: 800px) {
         display: block;
-        // gap: 10rem;
+      
       }
 
     .banner-profil__info{
@@ -56,10 +48,10 @@
         &__btn{
             display: flex;
             justify-content: flex-start;
-            // align-items: center;
-            // text-align: center;
+         
+           
             gap: 3rem;
-            // margin-left: 4rem;
+         
             
 
             @media screen and (max-width: 800px) {
