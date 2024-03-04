@@ -19,6 +19,6 @@ export default defineConfig({
     }
   },
   
-  minify: false,
+  minify: true,
   target: 'es2018', 
 });
