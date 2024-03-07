@@ -2,6 +2,7 @@
 
 
 
+
 .banner{
     display: flex;
     justify-content: space-around;
@@ -9,10 +10,17 @@
     text-align: center;
     margin: 5rem;
    
+    
+    // .banner-profil__info__intro{
+    //     h2{
+    //         font-weight: bold;
+    //     }
+    // }
 
     @media screen and (max-width: 800px) {
         display: block;
       
+        
       }
 
     .banner-profil__info{
@@ -30,6 +38,7 @@
                 color: gray;
                 font-size: 1.5rem;
                 letter-spacing: 0.2rem;
+                font-weight: bold;
             }
 
             h1{
@@ -49,9 +58,12 @@
             display: flex;
             justify-content: flex-start;
          
+            
            
+            
             gap: 3rem;
          
+            
             
 
             @media screen and (max-width: 800px) {
