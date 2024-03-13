@@ -78,14 +78,17 @@ nav{
 
 
 
-.nav-header span {
 
-  a{
-    text-decoration: none;
-    color: black;
+@media screen and (max-width: 800px) {
+  .nav-header span {
+  
+    a{
+      text-decoration: none;
+      color: black;
+    }
   }
-}
 
+}
 @media screen and (min-width: 800px) {
   nav 
   {
