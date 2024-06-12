@@ -1,44 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-/* @import 'header';
-@import'banner';
-@import'about';
-@import'skills';
-@import'portfolio';
-@import'contact';
-@import 'footer'; */
-
-/* html {
-    font-size: 62.5%;
-}
-
-body {
-    display: block;
-    min-height: 100%;
-    font-size: 1.6rem; //16px
-    font-family: roboto_regular, arial, sans-serif;
-    // -webkit-backface-visibility: hidden;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    padding-top: 15vh;
-}
-
-#mainContent {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 0 2rem;
-    margin-top: 3rem;
-}
-
-.finish-line{
-    height: 1px;
-    width: 100%;
-    background-color: rgb(228, 228, 228);
-    margin-top: 1rem;
-} */
+/* Hide the logo on small screens */
+@media (max-width: 768px) {
+    .logo {
+      display: none;
+    }
+    .mobile-profile-pic {
+      display: flex;
+    }
+  }
+  
+  /* Show the logo on larger screens */
+  @media (min-width: 769px) {
+    .logo {
+      display: flex;
+    }
+    .mobile-profile-pic {
+      display: none;
+    }
+  }
+  
