@@ -1,8 +1,8 @@
-import './scss/index.scss'
+import './style/index.css'
 
-const navToggle = document.querySelector(".nav-toggle");
-const linksContainer = document.querySelector(".links-container");
-const links = document.querySelector(".links");
+// const navToggle = document.querySelector(".nav-toggle");
+// const linksContainer = document.querySelector(".links-container");
+// const links = document.querySelector(".links");
 
 // navToggle.addEventListener("click", function () {
 
@@ -17,27 +17,27 @@ const links = document.querySelector(".links");
     
 // });
 
-const navbar = document.getElementById("nav");
-const topLink = document.querySelector(".top-link");
+// const navbar = document.getElementById("nav");
+// const topLink = document.querySelector(".top-link");
 
-window.addEventListener("scroll", function () {
-    const scrollHeight = window.pageYOffset;
-    const navHeight = navbar.getBoundingClientRect().height;
-    if (scrollHeight > navHeight) {
-      navbar.classList.add("fixed-nav");
-    } else {
-      navbar.classList.remove("fixed-nav");
-    }
+// window.addEventListener("scroll", function () {
+//     const scrollHeight = window.pageYOffset;
+//     const navHeight = navbar.getBoundingClientRect().height;
+//     if (scrollHeight > navHeight) {
+//       navbar.classList.add("fixed-nav");
+//     } else {
+//       navbar.classList.remove("fixed-nav");
+//     }
 
   
-    if (scrollHeight > 500) { 
-      console.log(scrollHeight)
+//     if (scrollHeight > 500) { 
+//       console.log(scrollHeight)
       
-    } else {
+//     } else {
         
 
-    }
-  });
+//     }
+//   });
 
 
 

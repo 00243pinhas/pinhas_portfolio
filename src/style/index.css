@@ -1,12 +1,17 @@
-@import 'header';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @import 'header';
 @import'banner';
 @import'about';
 @import'skills';
 @import'portfolio';
 @import'contact';
-@import 'footer';
+@import 'footer'; */
 
-html {
+/* html {
     font-size: 62.5%;
 }
 
@@ -36,4 +41,4 @@ body {
     width: 100%;
     background-color: rgb(228, 228, 228);
     margin-top: 1rem;
-}
+} */
