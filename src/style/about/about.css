@@ -27,6 +27,11 @@
     margin-right: 15rem;
 }
 
+.aboutTwohalf__text p{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
 .aboutTwohalf__text h2{
     font-weight: 400;
 }
