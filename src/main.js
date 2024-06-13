@@ -45,14 +45,14 @@ import './style/index.css'
 
 
 
-  const contactBtn = document.getElementById('contactBtn')
+  // const contactBtn = document.getElementById('contactBtn')
 
-  console.log(contactBtn)
+  // console.log(contactBtn)
 
-  contactBtn.addEventListener('click',function(){
+  // contactBtn.addEventListener('click',function(){
     
-    window.location.href = "http://localhost:5173/#contact";
-  })
+  //   window.location.href = "http://localhost:5173/#contact";
+  // })
 
   
 

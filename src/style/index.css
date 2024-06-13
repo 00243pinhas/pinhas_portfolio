@@ -1,20 +1,30 @@
-/* Hide the logo on small screens */
-@media (max-width: 768px) {
-    .logo {
-      display: none;
-    }
-    .mobile-profile-pic {
-      display: flex;
-    }
-  }
-  
-  /* Show the logo on larger screens */
-  @media (min-width: 769px) {
-    .logo {
-      display: flex;
-    }
-    .mobile-profile-pic {
-      display: none;
-    }
-  }
-  
+@import'./header/header.css';
+@import'./banner/banner.css';
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: block;
+    min-height: 100%;
+    font-size: 1.6rem; 
+    font-family: roboto_regular, arial, sans-serif;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#mainContent {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+} 
+

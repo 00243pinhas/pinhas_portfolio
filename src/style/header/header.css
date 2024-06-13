@@ -1,0 +1,22 @@
+
+
+/* Hide the logo on small screens */
+@media (max-width: 768px) {
+    .logo {
+      display: none;
+    }
+    .mobile-profile-pic {
+      display: flex;
+    }
+  }
+  
+  /* Show the logo on larger screens */
+  @media (min-width: 769px) {
+    .logo {
+      display: flex;
+    }
+    .mobile-profile-pic {
+      display: none;
+    }
+  }
+  
