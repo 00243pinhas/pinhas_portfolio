@@ -1,0 +1,43 @@
+.portfolio{
+    margin: 3rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.main-portfolio{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 1rem;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main-portfolio{
+       
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        
+    }
+
+}
+
+
+@media only screen and (max-width: 494px) {
+
+    .main-portfolio{
+       
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        align-items: center;
+        
+    }
+
+}
