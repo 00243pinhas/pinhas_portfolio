@@ -1,7 +1,8 @@
 @import'./header/header.css';
 @import'./banner/banner.css';
 @import'./portfolio/portfolio.css';
-
+@import'./about/about.css';
+@import'./skills/skills.css';
 
 
 html {

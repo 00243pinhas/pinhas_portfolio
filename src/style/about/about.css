@@ -1,0 +1,64 @@
+.about{
+    margin: 3rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.aboutOnehalf h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.aboutOnehalf p{
+    margin: 3rem;
+    color: gray;
+    font-size: 1.7rem;
+}
+
+.aboutTwohalf__text{
+    display: block;
+    justify-content: flex-start;
+    text-align: start;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.aboutTwohalf__text h2{
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 768px) {  
+    
+.aboutTwohalf__text{
+
+    margin-left: 9rem;
+    margin-right: 9rem;
+}
+
+}
+
+
+@media only screen and (max-width: 696px) {  
+    
+    .aboutTwohalf__text{
+    
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+    }
+
+@media only screen and (max-width: 320px) {  
+    
+        .aboutTwohalf__text{
+        
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
+        
+        }
