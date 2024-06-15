@@ -12,12 +12,13 @@
 }
 
 
-.main-portfolio{
+.main-portfolio {
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: repeat(3,minmax(200px,1fr));
     gap: 1rem;
-
+    margin-left: 7rem;
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -31,19 +32,18 @@
 }
 
 
-@media only screen and (max-width: 494px) {
+ @media only screen and (max-width: 634px) {
 
     .main-portfolio{
-       
-        grid-template-columns: repeat(1, minmax(200px, 1fr));
-        align-items: center;
+    
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
         
     }
 
-}
+} 
 
 
-@media only screen and (max-width: 320px) {
+/* @media only screen and (max-width: 320px) {
 
     .main-portfolio{
        
@@ -53,18 +53,19 @@
         
     }
 
-}
+} */
 
 
-
-@media only screen and (max-width: 416px) {
+/* 
+@media only screen and (max-width: 484px) {
 
     .main-portfolio{
        
+        margin-right: 3rem;
         grid-template-columns: repeat(1, minmax(200px, 1fr));
         align-items: center;
-        margin-left: 3.3rem;
+        
         
     }
 
-}
+} */
