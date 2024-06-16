@@ -10,13 +10,17 @@
 .aboutOnehalf h1{
     font-size: 3rem;
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 
 .aboutOnehalf p{
     margin: 3rem;
-    color: gray;
+    /* color: gray; */
     font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 .aboutTwohalf__text{
@@ -30,6 +34,9 @@
 .aboutTwohalf__text p{
     font-size: 1.5rem;
     letter-spacing: .1rem;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .aboutTwohalf__text h2{

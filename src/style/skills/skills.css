@@ -48,9 +48,10 @@
 
 .galerie-item__text p {
     text-align: start;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 1.2rem;
-    letter-spacing: .05rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
  .skills__titles h1 {
@@ -59,9 +60,11 @@
 }
 
 .skills__titles p {
-    color: gray;
+    /* color: gray; */
     font-size: 1.5rem;
-    letter-spacing: .23rem;
+    /* letter-spacing: .23rem; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 

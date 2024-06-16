@@ -27,22 +27,26 @@
 }
 
 
-.banner-profil__info__intro h2{
-    color: gray;
+.banner-profil__info__intro h1{
+    /* color: gray; */
     font-size: 1.5rem;
     letter-spacing: .2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
-.banner-profil__info__intro h1{
+.banner-profil__info__intro h2{
     font-size: 6rem;
     font-weight: 700;
 }
 
 .banner-profil__info__intro p{
     font-size: 1.5rem;
-    letter-spacing: .3rem;
+    /* letter-spacing: .3rem; */
     line-height: 2.3rem;
     color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 
