@@ -15,7 +15,7 @@
 .main-portfolio {
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 1rem;
     margin-left: 7rem;
     
@@ -56,13 +56,13 @@
 } */
 
 
-@media only screen and (max-width: 452px) {
+/* @media only screen and (max-width: 452px) {
 
     .main-portfolio{
         margin-left: 3rem;
     }
 
-}  
+}   */
 
 @media only screen and (max-width: 364px) {
 
