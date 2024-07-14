@@ -1,4 +1,4 @@
-.about{
+ .about{
     margin: 3rem;
     display: block;
     align-items: center;
@@ -17,12 +17,13 @@
 
 .aboutOnehalf p{
     margin: 3rem;
-    /* color: gray; */
+ 
     font-size: 1.7rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
+/*
 .aboutTwohalf__text{
     display: block;
     justify-content: flex-start;
@@ -73,4 +74,4 @@
             margin-right: 0rem;
         }
         
-        }
+        } */
